@@ -1,11 +1,8 @@
-const firstName = document.getElementById("first-name");
-const lastName = document.getElementById("last-name");
-const btnSubmit = document.querySelector(".btn-submit");
+document.getElementById("name-form").addEventListener("submit", function (event) {
+  event.preventDefault();
 
-btnSubmit.addEventListener("click", getFormvalue);
+  const fname = document.getElementById("fname").value;
+  const lname = document.getElementById("lname").value;
 
-function getFormvalue() {
-  alert(
-    `${firstName.value} ${lastName.value}`
-  );
-}
+  alert(`${fname} ${lname}`);
+});
