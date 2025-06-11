@@ -4,7 +4,7 @@ const btnSubmit = document.querySelector(".btn-submit");
 
 btnSubmit.addEventListener("click", getFormvalue);
 
-function getFormValue() {
+function getFormvalue() {
   alert(
     `${firstName.value} ${lastName.value}`
   );
